@@ -14,6 +14,7 @@ class LuckyController
     public function number(\App\Repository\FooRepository $fooRepository): Response
     {
         $fooRepository->findById(1);
+        $fooRepository->findByFoo(1);
 
         $number = random_int(0, 100);
 
